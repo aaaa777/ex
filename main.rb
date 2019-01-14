@@ -31,7 +31,7 @@ end
 bot = Discordrb::Commands::CommandBot.new(token: token, client_id: client_id, name: name, prefix: prefix)
 
 bot.command(:rate) do |e, *args|
-  break unless [526126341972819968, 229586488155701248].include?(e.channel.id)
+  #break unless [526126341972819968, 229586488155701248].include?(e.channel.id)
   url = URI.parse('https://api.worldoftanks.asia')
   #okutariid = 2017936183
   user_name = args[0]
@@ -127,7 +127,7 @@ bot.command(:rate) do |e, *args|
 end
 
 bot.command(:stats) do |e, *args|
-  break unless [526126341972819968, 229586488155701248, 447846567630864406].include?(e.channel.id)
+  #break unless [526126341972819968, 229586488155701248, 447846567630864406].include?(e.channel.id)
   sysmsg = ''
   result = user_search(database, e.user.id, 'ign')
   user_name = args[0]
