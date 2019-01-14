@@ -1,4 +1,3 @@
-$error_msg = {}
 module MessageFormat
   class Message
     def initialize(attribute = {})
@@ -85,27 +84,3 @@ module MessageFormat
     end
   end
 end
-$error_msg[:player_not_found_api] = {
-  ja: '', 
-  en: ''
-}
-
-$error_msg[:player_not_found_me] = {
-  ja: '',
-  en: ''
-}
-
-$error_msg[:invalid_argument] = {
-  ja: '',
-  en: ''
-}
-
-$error_msg[:argument_list] = {
-  ja: '',
-  en: ''
-}
-
-$error_msg[:invalid_player] = {
-  ja: ":warning: **[エラー]:**プレイヤー:`#{}`が見つかりませんでした",
-  en: ":warning: **[error]:**player:`#{}` not found"
-}
