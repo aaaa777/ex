@@ -20,8 +20,6 @@ if ARGV[0] == "-l" then
 else
   token = ENV['TOKEN']; prefix = ENV['PREFIX']
   uri = URI.parse(ENV['DATABASE_URL'])
-  $aobsbot = Discordrb::Commands::CommandBot.new(token: 'NTI2MTEwOTYxNzc4ODE5MDcz.DwAa3w.SoIleh2UIY0HLItGolX45GUB9qA', prefix: '!')
-
 end
 
 begin
